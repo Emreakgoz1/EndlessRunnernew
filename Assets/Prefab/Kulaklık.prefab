@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 1233461725380405682}
   - component: {fileID: 1627096451190933222}
   - component: {fileID: 6236423095110273151}
+  - component: {fileID: -2008869534931760336}
   m_Layer: 0
   m_Name: "Kulakl\u0131k"
   m_TagString: "Kulakl\u0131k"
@@ -309,6 +310,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 111.2, y: 93.43, z: 70.487976}
   m_Center: {x: -45.5, y: 0.95, z: 14.4}
+--- !u!114 &-2008869534931760336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897689225900765960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd08a5999e0c954eae4139b62f88a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectPrefab: {fileID: 1897689225900765960}
+  poolSize: 2
 --- !u!1 &3343733779733143785
 GameObject:
   m_ObjectHideFlags: 0

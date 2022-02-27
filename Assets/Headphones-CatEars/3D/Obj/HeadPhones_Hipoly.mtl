@@ -1,0 +1,58 @@
+# File exported by Pixologic 3D Print Exporter for ZBrush
+# http://www.pixologic.com
+
+newmtl mat0
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ns 100
+d 1.0
+illum 2
+map_Kd HeadPhones_HipolyTex1.jpg
+
+newmtl mat1
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ns 100
+d 1.0
+illum 2
+map_Kd HeadPhones_HipolyTex2.jpg
+
+newmtl mat2
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ns 100
+d 1.0
+illum 2
+map_Kd HeadPhones_HipolyTex3.jpg
+
+newmtl mat3
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ns 100
+d 1.0
+illum 2
+map_Kd HeadPhones_HipolyTex4.jpg
+
+newmtl mat4
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ns 100
+d 1.0
+illum 2
+map_Kd HeadPhones_HipolyTex5.jpg
+
+newmtl mat5
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ns 100
+d 1.0
+illum 2
+map_Kd HeadPhones_HipolyTex6.jpg
+
+newmtl mat6
+Kd 1.0 1.0 1.0
+Ks 1.0 1.0 1.0
+Ns 100
+d 1.0
+illum 2
+map_Kd HeadPhones_HipolyTex7.jpg
