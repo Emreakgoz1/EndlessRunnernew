@@ -35,11 +35,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            PlayerAnim.SetTrigger("jump");
-            PlayerAnim.SetBool("isGround", true);
-
             if (!isjumping)
             {
+                PlayerAnim.SetTrigger("jump");
+                PlayerAnim.SetBool("isGround", true);
+
                 isjumping = true;
                 model.DOLocalJump(model.localPosition, jumppower, 1, 1).OnComplete(() =>
                 {
