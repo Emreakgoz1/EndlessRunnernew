@@ -28,7 +28,9 @@ public class PlayerController : MonoBehaviour
             return;
 
         Horizontal = Joystick.Horizontal * LeftRightSpeed;
-        transform.position += new Vector3(Horizontal * LeftRightSpeed, 0, movementSpeed) * Time.deltaTime;
+        Vector3 position = transform.position;
+        position += new Vector3(Horizontal * LeftRightSpeed, 0, movementSpeed) * Time.deltaTime;
+        transform.position = new Vector3(Mathf.Clamp(position.x, -10, 10), position.y, position.z);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
