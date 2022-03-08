@@ -27,10 +27,7 @@ public class PlayerController : MonoBehaviour
         if (GameManager.Instance.IsLevelFinished)
             return;
 
-        //float Horizontal = Input.GetAxis("Horizontal") * LeftRightSpeed;
         Horizontal = Joystick.Horizontal * LeftRightSpeed;
-        //float Vertical = Input.GetAxis("Vertical") * movementSpeed / 2; 
-        transform.Translate(new Vector3(Horizontal, 0, Vertical) * Time.deltaTime);
         transform.position += new Vector3(Horizontal * LeftRightSpeed, 0, movementSpeed) * Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Space))
