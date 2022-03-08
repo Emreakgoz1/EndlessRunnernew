@@ -13,6 +13,7 @@ public class PlayerCollisionController : MonoBehaviour
             GameManager.Instance.KulaklýkCollected();    
             Destroy(other.gameObject);
         }
+
         if (other.tag =="Engel")
         {
             GameManager.Instance.GameOver();
