@@ -1,28 +1,27 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCollisionController : MonoBehaviour
 {
     public Spawnmanager spawnManager;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public PlayerController playercontroller;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
-            
         if (other.tag =="Kulaklik")
         {
-           Destroy(other.gameObject);
+            GameManager.Instance.KulaklýkCollected();    
+            Destroy(other.gameObject);
         }
-        
+        if (other.tag =="Engel")
+        {
+            GameManager.Instance.GameOver();
+        }
+    }
+
+    private IEnumerator WaitAndRestart(float WaitTime)
+    {
+        yield return new WaitForSeconds(WaitTime);
+        GameManager.Instance.GameOver();
     }
 }

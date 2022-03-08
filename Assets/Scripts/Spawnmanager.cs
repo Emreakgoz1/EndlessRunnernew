@@ -5,14 +5,14 @@ using UnityEngine;
 public class Spawnmanager : MonoBehaviour
 {
     RoadSpawner roadSpawner;
-    PiotSpawner plotSpawner;
+    BinaSpawn plotSpawner;
     EngelSpawner engelspawner;
     
     // Start is called before the first frame update
     void Start()
     {
         roadSpawner = GetComponent<RoadSpawner>();
-        plotSpawner = GetComponent<PiotSpawner>();
+        plotSpawner = GetComponent<BinaSpawn>();
         engelspawner = GetComponent<EngelSpawner>();
         
         

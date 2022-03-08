@@ -1,23 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 
 public class GameManager : MonoBehaviour
 {
-    private GameObject Player;
+    public static GameManager Instance { get; private set; }
+    public bool IsLevelFinished;
+    public PlayerController Player;
+
     public Text uiDistance;
-    // Start is called before the first frame update
-    void Start()
+    public Text uiKulaklýk;
+    private int playerkulaklýk;
+    public GameObject gameOverMenu;
+
+    private void Awake()
     {
-        Player = GameObject.Find("Player");
+        Instance = this;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        int distance = Mathf.RoundToInt(Player.transform.position.z);
+        int distance = Mathf.RoundToInt(Player.transform.position.z-146f);
         uiDistance.text = distance.ToString() + "m";
+        uiKulaklýk.text = playerkulaklýk.ToString();
+    }
+
+    public void KulaklýkCollected()
+    {
+        playerkulaklýk++;
+    }
+
+    public void GameOver()
+    {
+        IsLevelFinished = true;
+        Player.GetComponent<Animator>().enabled = false;
+        Player.Joystick.gameObject.SetActive(false);
+        gameOverMenu.SetActive(true);
     }
 }

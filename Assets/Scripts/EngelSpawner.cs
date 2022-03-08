@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 
 public class EngelSpawner : MonoBehaviour
@@ -9,7 +10,6 @@ public class EngelSpawner : MonoBehaviour
     private int spawnÝnterval = 65;
     private int lastSpawnZ = 190;
     private int spawnAmount = 1;
-    private int kulaklýkspawnAmount= 5;
     public List<GameObject> Obstacles;
     
 
@@ -49,4 +49,5 @@ public class EngelSpawner : MonoBehaviour
             
         }
     }
+    
 }

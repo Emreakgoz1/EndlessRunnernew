@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4373530538651843212}
   m_Layer: 0
   m_Name: RoadBlock_D
-  m_TagString: Untagged
+  m_TagString: Engel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,8 +90,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4373530538653831820}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.69292223, y: 1.4126823, z: 0.8265621}
+  m_Size: {x: 0.54, y: 1.4126823, z: 0.8265621}
   m_Center: {x: 0.000000074505806, y: 0.0000003874302, z: 0.41328105}
