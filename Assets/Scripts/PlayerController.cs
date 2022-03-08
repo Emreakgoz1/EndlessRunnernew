@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         position += new Vector3(Horizontal * LeftRightSpeed, 0, movementSpeed) * Time.deltaTime;
         transform.position = new Vector3(Mathf.Clamp(position.x, -10, 10), position.y, position.z);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Joystick.Vertical > .75f)
         {
             if (!isjumping)
             {
