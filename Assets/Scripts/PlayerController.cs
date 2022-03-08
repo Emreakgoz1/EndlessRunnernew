@@ -22,8 +22,13 @@ public class PlayerController : MonoBehaviour
         transform.Translate(new Vector3(Horizontal, 0, Vertical) * Time.deltaTime);
 
     }
+
     private void OnTriggerEnter(Collider other)
     {
-        spawnManager.SpawnTriggerEntered();
+        if (other.tag == "SpawnTrigger")
+        {
+            spawnManager.SpawnTriggerEntered();
+        }
     }
+    
 }
